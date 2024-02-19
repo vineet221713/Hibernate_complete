@@ -1,0 +1,44 @@
+<!-- src/main/resources/hibernate.cfg.xml -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/vineet</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+
+        <!-- Specify dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Echo all executed SQL to stdout -->
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.use_sql_comments">true</property>
+
+
+
+
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!-- Mention annotated entity class package -->
+        <mapping class="com.tut.Student"/>
+        <mapping class="com.tut.Address"/>
+        <mapping class="com.tut.Certificate"/>
+
+        <mapping class="com.map_oneToOne.Answer"/>
+        <mapping class="com.map_oneToOne.Question"/>
+
+        <mapping class="com.map_oneToMany.Answer"/>
+        <mapping class="com.map_oneToMany.Question"/>
+
+        <mapping class="com.map_manyToMany.Emp"/>
+        <mapping class="com.map_manyToMany.Project"/>
+
+        <mapping class="com.State.Student"/>
+
+    </session-factory>
+</hibernate-configuration>

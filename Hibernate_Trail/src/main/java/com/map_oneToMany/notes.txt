@@ -1,0 +1,14 @@
+one to one mapping = two type 1) unidrictional 2) By drictional
+------------------
+one qustion have one ans
+one student have only one id
+one man have only one pancard
+
+
+one to many mapping or many to one
+----------------------------------
+one question have many answer , many answer have one answer
+Bydrictional
+
+one employee have many laptop
+many laptop have blong to one person

@@ -1,0 +1,10 @@
+many to many
+------------
+one employee have many project and many emplyee have one project .
+make extra new table for this .
+
+
+fetch type
+----------
+lazy load and eager load
+
